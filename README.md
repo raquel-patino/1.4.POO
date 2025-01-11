@@ -2,9 +2,14 @@
 
 **Descripcion**
 
-En este tema tenemos dos ejercicios divididos en dos carpetas.
+Nivel 1:
+- En este tema tenemos dos ejercicios divididos en dos carpetas.
 
-Las dos carpetas se han subido en el mismo commit.
+- Las dos carpetas se han subido en el mismo commit.
+
+Nivel 2:
+
+- Carpeta dedicada al nivel 2.
 
 **Programas**
 - VSCODE
