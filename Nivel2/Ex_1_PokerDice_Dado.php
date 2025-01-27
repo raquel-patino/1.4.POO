@@ -1,21 +1,19 @@
 <?php
-declare(strict_types=1);
+//declare(strict_types=1);
 class Dado {
 
-protected array $caras= ["As","K", "Q", "J", 7, ];
-protected int $valorTirada;
-protected static int $contador=0;
+protected const CARAS= ["As","K", "Q", "J", 7, 8];
+protected  $valorTirada;
+protected static  $contador=0;
 
 
-
-function throw () : int {
+function throw () : void {
     ++self::$contador;
-    $this->valorTirada=rand(0, (count($this->caras)-1));
-    return $this->valorTirada;
+    $this->valorTirada=rand(0, (count(self::CARAS)-1));
 }
 
-function shapeName () : mixed {
-return $this->caras[$this->valorTirada];
+function shapeName (){
+return self::CARAS[$this->valorTirada];
 }
 
 static function getTotalThrows () : int{
